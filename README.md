@@ -1,5 +1,7 @@
 # Tab组件
 
+## [实例](https://381924237.github.io/js-component-tab/index.html)
+
 ## 组件功能
 
 点击不同tab按钮进行对应内容的切换，以及tab按钮的变化；
