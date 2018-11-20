@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tab</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      flex: 1;
+      border: 1px solid;
+    }
+
+    .tab>li {
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    .tab>li.active {
+      background-color: #ccc;
+    }
+
+    .tab-container,.tab-container2 {
+      width: 500px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .content>li {
+      height: 200px;
+      display: none;
+      padding: 20px;
+    }
+
+    .content>li.active {
+      display: block;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab-container">
+    <ul class="tab">
+      <li class="active">tab1</li>
+      <li>tab2</li>
+      <li>tab3</li>
+    </ul> 
+    <ul class="content">
+      <li class="active">content1</li>
+      <li>content2</li>
+      <li>content3</li>
+    </ul>
+  </div>
+
+  <div class="tab-container2">
+      <ul class="tab">
+        <li class="active">tab1</li>
+        <li>tab2</li>
+        <li>tab3</li>
+      </ul> 
+      <ul class="content">
+        <li class="active">content1</li>
+        <li>content2</li>
+        <li>content3</li>
+      </ul>
+    </div>
+
+  <script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
+  <script src="tab.js"></script>
+</body>
+</html>
